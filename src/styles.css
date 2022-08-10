@@ -1,2 +1,10 @@
 /* Add application styles & imports to this file! */
-@import "~@ionic/angular/css/ionic.bundle.css";
+@import '~@ionic/angular/css/ionic.bundle.css';
+
+:root {
+  --ion-font-family: 'Poppins', sans-serif;
+}
+
+.titulo {
+  text-align: center;
+}
