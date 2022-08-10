@@ -2,7 +2,25 @@
 @import '~@ionic/angular/css/ionic.bundle.css';
 
 :root {
+  /* fonte */
   --ion-font-family: 'Poppins', sans-serif;
+
+  /* barra superior */
+  --ion-toolbar-background: #0f2027;
+  --ion-toolbar-color: white;
+
+  /* fundo */
+  --ion-background-color: linear-gradient(
+    to right,
+    #0f2027 34%,
+    #203a43 33%,
+    #2c5364 33%
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* barra inferior */
+  --ion-tab-bar-background: #0f2027;
+  --ion-tab-bar-color: #838383;
+  --ion-tab-bar-color-selected: white;
 }
 
 .titulo {
