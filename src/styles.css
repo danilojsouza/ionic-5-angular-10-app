@@ -4,6 +4,8 @@
 :root {
   /* fonte */
   --ion-font-family: 'Poppins', sans-serif;
+  --ion-text-color: white;
+  --ion-text-color-rgb: 255, 255, 255;
 
   /* barra superior */
   --ion-toolbar-background: #0f2027;
@@ -11,18 +13,81 @@
 
   /* fundo */
   --ion-background-color: linear-gradient(
-    to right,
-    #0f2027 34%,
-    #203a43 33%,
-    #2c5364 33%
+    150deg,
+    #0f2027,
+    #203a43,
+    #2c5364
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   /* barra inferior */
   --ion-tab-bar-background: #0f2027;
   --ion-tab-bar-color: #838383;
   --ion-tab-bar-color-selected: white;
+
+  /* cards */
+  --ion-card-background: linear-gradient(139deg, #0f2027 0%, transparent 100%);
+  --ion-item-background: transparent;
 }
 
 .titulo {
   text-align: center;
+}
+
+.conteudo {
+  margin: auto;
+  text-align: center;
+}
+
+.imagem-solidariedade {
+  padding: 20px;
+  padding-bottom: 0px;
+  width: 100%;
+  max-width: 400px;
+
+  animation: animation-imagem-solidariedade 4s infinite alternate;
+}
+
+ion-card {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition-duration: 500ms;
+}
+
+ion-card:hover {
+  transform: scale(1.03);
+}
+
+ion-thumbnail {
+  animation: animation-imagem-card 3s infinite alternate;
+}
+
+@keyframes animation-imagem-solidariedade {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(1deg) scale(1.02);
+  }
+
+  100% {
+    transform: rotate(-1deg) scale(1.04);
+  }
+}
+
+@keyframes animation-imagem-card {
+  0% {
+    transform: translate(0px, 2px) scale(0.8);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: translate(0px, -2px) scale(0.8);
+  }
 }
