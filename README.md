@@ -1,6 +1,6 @@
 # Aplicativo de Doações
 
-[StackBlitz ⚡️](https://stackblitz.com/edit/ionic-5-angular-10-app-doar)
+[StackBlitz ⚡️](https://ionic-5-angular-10-app-doar.stackblitz.io)
 
 Este é um aplicativo desenvolvido com Ionic 5 e Angular 10 para direcionar pessoas para os pontos de doações. O aplicativo está em desenvolvimento e foi criado com o objetivo de aprendizado.
 
