@@ -6,7 +6,7 @@
 
 <ion-content>
   <div class="conteudo animate__animated animate__fadeInLeft">
-    <ion-card>
+    <ion-card (click)="redirecionarDoacao('banco+de+alimentos')">
       <ion-item lines="none">
         <ion-thumbnail slot="start">
           <img
@@ -17,7 +17,7 @@
       </ion-item>
     </ion-card>
 
-    <ion-card>
+    <ion-card (click)="redirecionarDoacao('doar+roupas')">
       <ion-item lines="none">
         <ion-thumbnail slot="start">
           <img
@@ -28,7 +28,7 @@
       </ion-item>
     </ion-card>
 
-    <ion-card>
+    <ion-card (click)="redirecionarDoacao('doar+sangue')">
       <ion-item lines="none">
         <ion-thumbnail slot="start">
           <img
