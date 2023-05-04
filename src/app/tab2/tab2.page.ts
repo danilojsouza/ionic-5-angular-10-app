@@ -9,4 +9,8 @@ export class Tab2Page {
 
   constructor() {}
 
+  redirecionarDoacao(parametro: string) {
+    window.open(`https://www.google.com/maps/search/${parametro}`, '_blank').focus();
+  }
+
 }
