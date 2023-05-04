@@ -36,7 +36,13 @@
 .conteudo {
   margin: auto;
   text-align: center;
-  padding: 25px;
+  padding: 25px 15% 25px 15%;
+}
+
+@media screen and (max-width: 400px) {
+  .conteudo {
+    padding: 20px 2% 20px 2%;
+  }
 }
 
 .imagem-solidariedade {
@@ -46,6 +52,10 @@
   max-width: 400px;
 
   animation: animation-imagem-solidariedade 4s infinite alternate;
+}
+
+.white-space-normal {
+  white-space: normal !important;
 }
 
 ion-card {

@@ -13,13 +13,27 @@
     />
     <p class="texto-item">
       Esta precisando de ajuda? Podemos te ajudar! Preencha os campos e fale com
-      um voluntário. 🙏
+      um voluntário 🙏
     </p>
-    <ion-button
-      (click)="redirecionarWhatsappComMensagem()"
-      expand="block"
-      type="submit"
-      >Falar com Voluntario</ion-button
-    >
+    <form [formGroup]="form" (submit)="submit()" class="form">
+      <ion-item>
+        <ion-label position="floating">Nome Completo</ion-label>
+        <ion-input type="text" formControlName="nome"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Endereço</ion-label>
+        <ion-input type="text" formControlName="endereco"></ion-input>
+      </ion-item>
+
+      <ion-button
+        [disabled]="form.invalid || form.pending"
+        expand="block"
+        type="submit"
+        class="white-space-normal"
+      >
+        Conversar com voluntário
+      </ion-button>
+    </form>
   </div>
 </ion-content>
